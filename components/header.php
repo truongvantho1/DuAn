@@ -31,15 +31,15 @@
                         </div>
 
                         <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
-                            <div class="site-logo ">
-                                <a href="index.php" class="js-logo-clone">Shop Shoes VPT</a>
+                            <div class="site-logo">
+                                <a href="index.php" class="js-logo-clone">VPT Shoes</a>
                             </div>
                         </div>
 
                         <div class="col-6 col-md-4 order-3 order-md-3 text-right">
                             <div class="site-top-icons">
                                 <ul>
-                                    <li class=""><a href="#"><span class="icon icon-person"></span></a>
+                                    <li class=""><a href="login.php"><span class="icon icon-person"></span></a>
                                     </li>
                                     <li class=""><a href="#"><span class="icon icon-heart-o"></span></a>
                                     </li>

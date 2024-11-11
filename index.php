@@ -3,12 +3,11 @@
     <div class="container">
         <div class="row align-items-start align-items-md-center justify-content-end">
             <div class="col-md-5 text-center text-md-left pt-5 pt-md-0">
-                <h1 class="mb-2">Finding Your Perfect Shoes</h1>
+                <h1 class="mb-2">VPT SHOES STORE</h1>
                 <div class="intro-text text-center text-md-left">
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at
-                        iaculis quam. Integer accumsan tincidunt fringilla. </p>
+                    <p class="mb-4">Nơi bạn tìm thấy phong cách và sự thoải mái hoàn hảo cho đôi chân của mình. </p>
                     <p>
-                        <a href="shop.php" class="btn btn-sm btn-primary">Shop Now</a>
+                        <a href="shop.php" class="btn btn-sm btn-primary">Mua Ngay</a>
                     </p>
                 </div>
             </div>
@@ -24,9 +23,9 @@
                     <span class="icon-truck"></span>
                 </div>
                 <div class="text">
-                    <h2 class="text-uppercase">Free Shipping</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam.
-                        Integer accumsan tincidunt fringilla.</p>
+                    <h2 class="text-uppercase">Miễn phí Ship</h2>
+                    <p>Với những đơn hàng trên 500.000đ chúng tôi sẽ hỗ trợ bạn ship miễn phí , dịch vụ ship tận tình
+                    </p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="100">
@@ -34,9 +33,8 @@
                     <span class="icon-refresh2"></span>
                 </div>
                 <div class="text">
-                    <h2 class="text-uppercase">Free Returns</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam.
-                        Integer accumsan tincidunt fringilla.</p>
+                    <h2 class="text-uppercase">Trả hàng miễn phí</h2>
+                    <p>Quý khách vui lòng quay video lúc nhận hàng để được shop hỗ trợ nhé</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="200">
@@ -44,9 +42,8 @@
                     <span class="icon-help"></span>
                 </div>
                 <div class="text">
-                    <h2 class="text-uppercase">Customer Support</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam.
-                        Integer accumsan tincidunt fringilla.</p>
+                    <h2 class="text-uppercase">Dịch Vụ Hỗ trợ</h2>
+                    <p>Phục vụ tận tâm, khách hàng là thượng đế</p>
                 </div>
             </div>
         </div>
@@ -57,113 +54,37 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade" data-aos-delay="">
-                <a class="block-2-item" href="shop.php">
+                <a class="block-2-item" href="shopg1.php">
                     <figure class="image">
-                        <img src="images/women.jpg" alt="" class="img-fluid">
+                        <img src="images/Giay.jpg" alt="" class="img-fluid">
                     </figure>
                     <div class="text">
                         <span class="text-uppercase">Collections</span>
-                        <h3>Women</h3>
+                        <h3>Giày</h3>
                     </div>
                 </a>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-                <a class="block-2-item" href="shop.php">
+                <a class="block-2-item" href="shopd1.php">
                     <figure class="image">
-                        <img src="images/children.jpg" alt="" class="img-fluid">
+                        <img src="images/Dep.jpg" alt="" class="img-fluid">
                     </figure>
                     <div class="text">
                         <span class="text-uppercase">Collections</span>
-                        <h3>Children</h3>
+                        <h3>Dép</h3>
                     </div>
                 </a>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
-                <a class="block-2-item" href="shop.php">
+                <a class="block-2-item" href="shoppk1.php">
                     <figure class="image">
-                        <img src="images/men.jpg" alt="" class="img-fluid">
+                        <img src="images/Tat.jpg" alt="" class="img-fluid">
                     </figure>
                     <div class="text">
                         <span class="text-uppercase">Collections</span>
-                        <h3>Men</h3>
+                        <h3>Phụ Kiện</h3>
                     </div>
                 </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="site-section block-3 site-blocks-2 bg-light">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-7 site-section-heading text-center pt-4">
-                <h2>Featured Products</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="nonloop-block-3 owl-carousel">
-                    <div class="item">
-                        <div class="block-4 text-center">
-                            <figure class="block-4-image">
-                                <img src="images/cloth_1.jpg" alt="Image placeholder" class="img-fluid">
-                            </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="shop.php">Tank Top</a></h3>
-                                <p class="mb-0">Finding perfect t-shirt</p>
-                                <p class="text-primary font-weight-bold">$50</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="block-4 text-center">
-                            <figure class="block-4-image">
-                                <img src="images/shoe_1.jpg" alt="Image placeholder" class="img-fluid">
-                            </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="shop.php">Corater</a></h3>
-                                <p class="mb-0">Finding perfect products</p>
-                                <p class="text-primary font-weight-bold">$50</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="block-4 text-center">
-                            <figure class="block-4-image">
-                                <img src="images/cloth_2.jpg" alt="Image placeholder" class="img-fluid">
-                            </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="shop.php">Polo Shirt</a></h3>
-                                <p class="mb-0">Finding perfect products</p>
-                                <p class="text-primary font-weight-bold">$50</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="block-4 text-center">
-                            <figure class="block-4-image">
-                                <img src="images/cloth_3.jpg" alt="Image placeholder" class="img-fluid">
-                            </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="shop.php">T-Shirt Mockup</a></h3>
-                                <p class="mb-0">Finding perfect products</p>
-                                <p class="text-primary font-weight-bold">$50</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="block-4 text-center">
-                            <figure class="block-4-image">
-                                <img src="images/shoe_1.jpg" alt="Image placeholder" class="img-fluid">
-                            </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="shop.php">Corater</a></h3>
-                                <p class="mb-0">Finding perfect products</p>
-                                <p class="text-primary font-weight-bold">$50</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -173,20 +94,40 @@
     <div class="container">
         <div class="row justify-content-center  mb-5">
             <div class="col-md-7 site-section-heading text-center pt-4">
-                <h2>Big Sale!</h2>
+                <h2>Sản Phẩm Bán Chạy Nhất Tháng</h2>
             </div>
         </div>
         <div class="row align-items-center">
             <div class="col-md-12 col-lg-7 mb-5">
-                <a href="shop.php"><img src="images/blog_1.jpg" alt="Image placeholder" class="img-fluid rounded"></a>
+                <img src="images/Giay.jpg" alt="Image placeholder" class="img-fluid rounded">
             </div>
             <div class="col-md-12 col-lg-5 text-center pl-md-5">
-                <h2><a href="shop.php">50% less in all items</a></h2>
-                <p class="post-meta mb-4">By <a href="shop.php">Carl Smith</a> <span class="block-8-sep">&bullet;</span>
-                    September 3, 2018</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam iste dolor accusantium
-                    facere corporis ipsum animi deleniti fugiat. Ex, veniam?</p>
-                <p><a href="shop.php" class="btn btn-primary btn-sm">Shop Now</a></p>
+                <h2>Đây là Sản Phẩm Bán Chạy Nhất Tháng 11 </h2>
+                <h2>Giảm Giá đến hết ngày 15/11/2024</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="site-section block-8">
+    <div class="container">
+        <div class="row justify-content-center  mb-5">
+            <div class="col-md-7 site-section-heading text-center pt-4">
+                <h2>Giảm Giá!</h2>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-12 col-lg-7 mb-5">
+                <img src="images/blog_1.png" alt="Image placeholder" class="img-fluid rounded">
+            </div>
+            <div class="col-md-12 col-lg-5 text-center pl-md-5">
+                <h2>Chương trình giảm giá 15% có giới hạn từ ngày 1/10/2024 đến 31/10/2024</h2>
+
+                <p class="post-meta mb-4">Nha Trang <span class="block-8-sep">&bullet;</span>
+                    3/11/2024</p>
+                <p>Event Có hạn nên bạn hãy nhanh tay thêm vào giỏ hàng nhé , biết đâu được sẽ trở thành VIP của
+                    shop
+                    thì sao</p>
+                <p><a href="shop.php" class="btn btn-primary btn-sm">Mua Ngay</a></p>
             </div>
         </div>
     </div>

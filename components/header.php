@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    .material-symbols-outlined.logout-icon {
+        color: red !important;
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+    }
+</style>
 
 <head>
     <title>Shoppers &mdash; Colorlib e-Commerce Template</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -16,6 +24,8 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=logout" />
 
 </head>
 
@@ -39,11 +49,16 @@
                         <div class="col-6 col-md-4 order-3 order-md-3 text-right">
                             <div class="site-top-icons">
                                 <ul>
-                                    <li class=""><a href="login.php"><span class="icon icon-person"></span></a>
+                                    <li class=""><a href="ttkhachhang.php"><span class="icon icon-person"></span></a>
                                     </li>
-                                    <li class=""><a href="#"><span class="icon icon-heart-o"></span></a>
+                                    <li>
+                                        <a href="login.php">
+                                            <span class="material-symbols-outlined logout-icon">
+                                                logout
+                                            </span>
+                                        </a>
                                     </li>
-                                    <li class="">
+                                    <li class="" a>
                                         <a href="cart.php" class="site-cart">
                                             <span class="icon icon-shopping_cart"></span>
                                             <span class="count">2</span>

@@ -1,3 +1,4 @@
+<?php include('controllers/auth.controller.php') ?>
 <?php include('components/header.php') ?>
 
 <div class="bg-light py-3">
@@ -7,6 +8,7 @@
                     class="text-black">Cart</strong></div>
         </div>
     </div>
+
 </div>
 
 <div class="site-section">
@@ -147,5 +149,4 @@
         </div>
     </div>
 </div>
-
 <?php include('components/footer.php') ?>

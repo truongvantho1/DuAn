@@ -10,6 +10,7 @@
 
 <div class="site-section">
     <div class="container">
+
         <div class="row mb-5">
             <div class="col-md-9 order-2">
                 <div class="row">
@@ -37,47 +38,47 @@
                     <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                         <div class="block-4 text-center border">
                             <figure class="block-4-image">
-                                <a href="shop-single.php"><img src="images/Giay.jpg" alt="Image placeholder"
+                                <a href="shop-single.php"><img src="images/giay6.jpg" alt="Image placeholder"
                                         class="img-fluid"></a>
                             </figure>
                             <div class="block-4-text p-4">
-                                <h3><a href="shop-single.php">Giày xinh cho người yêu</a></h3>
-                                <p class="mb-0">sale 20%</p>
-                                <div>
-                                    <p style="text-decoration: line-through;">200.000đ</p>
-                                    <p class="text-primary font-weight-bold">160.000đ</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                        <div class="block-4 text-center border">
-                            <figure class="block-4-image">
-                                <a href="shop-single.php"><img src="images/giay1.jpg" alt="Image placeholder"
-                                        class="img-fluid"></a>
-                            </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="shop-single.php">Giày đi trong nhà</a></h3>
-                                <p class="mb-0">sale 0%</p>
-                                <div>
-                                    <p style="text-decoration: line-through;">120.000đ</p>
-                                    <p class="text-primary font-weight-bold">120.000đ</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                        <div class="block-4 text-center border">
-                            <figure class="block-4-image">
-                                <a href="shop-single.php"><img src="images/giay2.jpg" alt="Image placeholder"
-                                        class="img-fluid"></a>
-                            </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="shop-single.php">Giày thể thao unisex</a></h3>
+                                <h3><a href="shop-single.php">Giày balenciaga</a></h3>
                                 <p class="mb-0">sale 10%</p>
                                 <div>
-                                    <p style="text-decoration: line-through;">190.000đ</p>
-                                    <p class="text-primary font-weight-bold">171.000đ</p>
+                                    <p style="text-decoration: line-through;">300.000đ</p>
+                                    <p class="text-primary font-weight-bold">270.000đ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                        <div class="block-4 text-center border">
+                            <figure class="block-4-image">
+                                <a href="shop-single.php"><img src="images/giay7.jpg" alt="Image placeholder"
+                                        class="img-fluid"></a>
+                            </figure>
+                            <div class="block-4-text p-4">
+                                <h3><a href="shop-single.php">Giày Sen Gou Gou</a></h3>
+                                <p class="mb-0">sale 0%</p>
+                                <div>
+                                    <p style="text-decoration: line-through;">220.000đ</p>
+                                    <p class="text-primary font-weight-bold">220.000đ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                        <div class="block-4 text-center border">
+                            <figure class="block-4-image">
+                                <a href="shop-single.php"><img src="images/giay8.jpg" alt="Image placeholder"
+                                        class="img-fluid"></a>
+                            </figure>
+                            <div class="block-4-text p-4">
+                                <h3><a href="shop-single.php">Giày unisex</a></h3>
+                                <p class="mb-0">sale 0%</p>
+                                <div>
+                                    <p style="text-decoration: line-through;">230.000đ</p>
+                                    <p class="text-primary font-weight-bold">230.000đ</p>
                                 </div>
                             </div>
                         </div>
@@ -87,15 +88,15 @@
                     <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                         <div class="block-4 text-center border">
                             <figure class="block-4-image">
-                                <a href="shop-single.php"><img src="images/giay3.jpg" alt="Image placeholder"
+                                <a href="shop-single.php"><img src="images/Dep.jpg" alt="Image placeholder"
                                         class="img-fluid"></a>
                             </figure>
                             <div class="block-4-text p-4">
-                                <h3><a href="shop-single.php">Giày Sport</a></h3>
-                                <p class="mb-0">sale 0%</p>
+                                <h3><a href="shop-single.php">Dép đa dụng</a></h3>
+                                <p class="mb-0">sale 20%</p>
                                 <div>
-                                    <p style="text-decoration: line-through;">120.000đ</p>
-                                    <p class="text-primary font-weight-bold">120.000đ</p>
+                                    <p style="text-decoration: line-through;">100.000đ</p>
+                                    <p class="text-primary font-weight-bold">80.000đ</p>
                                 </div>
                             </div>
                         </div>
@@ -103,31 +104,31 @@
                     <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                         <div class="block-4 text-center border">
                             <figure class="block-4-image">
-                                <a href="shop-single.php"><img src="images/giay4.jpg" alt="Image placeholder"
+                                <a href="shop-single.php"><img src="images/dep1.jpg" alt="Image placeholder"
                                         class="img-fluid"></a>
                             </figure>
                             <div class="block-4-text p-4">
-                                <h3><a href="shop-single.php">giày thể thao siêu rẻ</a></h3>
+                                <h3><a href="shop-single.php">Dép đi trong nhà</a></h3>
+                                <p class="mb-0">sale 0%</p>
+                                <div>
+                                    <p style="text-decoration: line-through;">90.000đ</p>
+                                    <p class="text-primary font-weight-bold">90.000đ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                        <div class="block-4 text-center border">
+                            <figure class="block-4-image">
+                                <a href="shop-single.php"><img src="images/dep2.jpg" alt="Image placeholder"
+                                        class="img-fluid"></a>
+                            </figure>
+                            <div class="block-4-text p-4">
+                                <h3><a href="shop-single.php">Dép thời trang nữ</a></h3>
                                 <p class="mb-0">sale 10%</p>
                                 <div>
-                                    <p style="text-decoration: line-through;">80.000đ</p>
-                                    <p class="text-primary font-weight-bold">72.000đ</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                        <div class="block-4 text-center border">
-                            <figure class="block-4-image">
-                                <a href="shop-single.php"><img src="images/giay5.jpg" alt="Image placeholder"
-                                        class="img-fluid"></a>
-                            </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="shop-single.php">Giày thể thao tháng 11</a></h3>
-                                <p class="mb-0">sale 0%</p>
-                                <div>
-                                    <p style="text-decoration: line-through;">120.000đ</p>
-                                    <p class="text-primary font-weight-bold">120.000đ</p>
+                                    <p style="text-decoration: line-through;">170.000đ</p>
+                                    <p class="text-primary font-weight-bold">153.000đ</p>
                                 </div>
                             </div>
                         </div>
@@ -137,13 +138,13 @@
                     <div class="col-md-12 text-center">
                         <div class="site-block-27">
                             <ul>
-                                <li><a href="shop5.php">&lt;</a></li>
-                                <li class="active"><span>1</span></li>
-                                <li><a href="shop2.php">2</a></li>
+                                <li><a href="shop.php">&lt;</a></li>
+                                <li><a href=" shop.php">1</a></li>
+                                <li class="active"> <span>2</span></li>
                                 <li><a href="shop3.php">3</a></li>
-                                <li><a href="shop4.php">3</a></li>
-                                <li><a href="shop5.php">3</a></li>
-                                <li><a href="shop2.php">&gt;</a></li>
+                                <li><a href="shop4.php">4</a></li>
+                                <li><a href="shop5.php">5</a></li>
+                                <li><a href="shop3.php">&gt;</a></li>
                             </ul>
                         </div>
                     </div>
@@ -213,4 +214,5 @@
         </div>
     </div>
 </div>
+
 <?php include('components/footer.php') ?>

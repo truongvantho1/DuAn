@@ -15,7 +15,7 @@
             <div class="col-md-6">
                 <div class="block-16">
                     <figure>
-                        <img src="images/blog_1.jpg" alt="Image placeholder" class="img-fluid rounded">
+                        <img src="images/blog_1.png" alt="Image placeholder" class="img-fluid rounded">
                         <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-button popup-vimeo"><span
                                 class="ion-md-play"></span></a>
 
@@ -27,93 +27,27 @@
 
 
                 <div class="site-section-heading pt-3 mb-4">
-                    <h2 class="text-black">How We Started</h2>
+                    <h1 class="text-black" style="font-size: 3.5rem;">Nguồn cảm hứng</h1>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius repellat, dicta at laboriosam,
-                    nemo exercitationem itaque eveniet architecto cumque, deleniti commodi molestias repellendus
-                    quos sequi hic fugiat asperiores illum. Atque, in, fuga excepturi corrupti error corporis
-                    aliquam unde nostrum quas.</p>
-                <p>Accusantium dolor ratione maiores est deleniti nihil? Dignissimos est, sunt nulla illum autem
-                    in, quibusdam cumque recusandae, laudantium minima repellendus.</p>
+                <div style="font-size: 1.8rem;">
+                    <p>Niềm đam mê với những đôi giày không chỉ đến từ việc yêu thích thời trang mà còn từ mong muốn
+                        mang
+                        đến sự tự tin và phong cách cho mọi người. Mỗi đôi giày không chỉ là một sản phẩm, mà còn là
+                        biểu
+                        tượng của cá tính, sự thoải mái và bản sắc riêng. Chính vì vậy, chúng tôi quyết định mở một cửa
+                        hàng
+                        giày nơi mọi người có thể tìm thấy những đôi giày phù hợp nhất, từ kiểu dáng, màu sắc đến chất
+                        lượng vượt trội. Hy vọng rằng mỗi đôi giày từ cửa hàng chúng tôi sẽ đồng hành và truyền cảm hứng
+                        cho
+                        những bước đi của bạn!</p>
+                    <p> Chúng tôi luôn luôn tận tình và chu đáo với thượng đế của mình !!!</p>
+                </div>
+
 
             </div>
         </div>
     </div>
 </div>
-
-<div class="site-section border-bottom" data-aos="fade">
-    <div class="container">
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-7 site-section-heading text-center pt-4">
-                <h2>The Team</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-3">
-
-                <div class="block-38 text-center">
-                    <div class="block-38-img">
-                        <div class="block-38-header">
-                            <img src="images/person_1.jpg" alt="Image placeholder" class="mb-4">
-                            <h3 class="block-38-heading h4">Elizabeth Graham</h3>
-                            <p class="block-38-subheading">CEO/Co-Founder</p>
-                        </div>
-                        <div class="block-38-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil
-                                sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="block-38 text-center">
-                    <div class="block-38-img">
-                        <div class="block-38-header">
-                            <img src="images/person_2.jpg" alt="Image placeholder" class="mb-4">
-                            <h3 class="block-38-heading h4">Jennifer Greive</h3>
-                            <p class="block-38-subheading">Co-Founder</p>
-                        </div>
-                        <div class="block-38-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil
-                                sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="block-38 text-center">
-                    <div class="block-38-img">
-                        <div class="block-38-header">
-                            <img src="images/person_3.jpg" alt="Image placeholder" class="mb-4">
-                            <h3 class="block-38-heading h4">Patrick Marx</h3>
-                            <p class="block-38-subheading">Marketing</p>
-                        </div>
-                        <div class="block-38-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil
-                                sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="block-38 text-center">
-                    <div class="block-38-img">
-                        <div class="block-38-header">
-                            <img src="images/person_4.jpg" alt="Image placeholder" class="mb-4">
-                            <h3 class="block-38-heading h4">Mike Coolbert</h3>
-                            <p class="block-38-subheading">Sales Manager</p>
-                        </div>
-                        <div class="block-38-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil
-                                sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 
 <div class="site-section site-section-sm site-blocks-1 border-0" data-aos="fade">
     <div class="container">
@@ -123,9 +57,9 @@
                     <span class="icon-truck"></span>
                 </div>
                 <div class="text">
-                    <h2 class="text-uppercase">Free Shipping</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam.
-                        Integer accumsan tincidunt fringilla.</p>
+                    <h2 class="text-uppercase">Miễn phí Ship</h2>
+                    <p>Với những đơn hàng trên 500.000đ chúng tôi sẽ hỗ trợ bạn ship miễn phí , dịch vụ ship tận tình
+                    </p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="100">
@@ -133,9 +67,8 @@
                     <span class="icon-refresh2"></span>
                 </div>
                 <div class="text">
-                    <h2 class="text-uppercase">Free Returns</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam.
-                        Integer accumsan tincidunt fringilla.</p>
+                    <h2 class="text-uppercase">Trả hàng miễn phí</h2>
+                    <p>Quý khách vui lòng quay video lúc nhận hàng để được shop hỗ trợ nhé</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="200">
@@ -143,9 +76,8 @@
                     <span class="icon-help"></span>
                 </div>
                 <div class="text">
-                    <h2 class="text-uppercase">Customer Support</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam.
-                        Integer accumsan tincidunt fringilla.</p>
+                    <h2 class="text-uppercase">Dịch Vụ Hỗ trợ</h2>
+                    <p>Phục vụ tận tâm, khách hàng là thượng đế</p>
                 </div>
             </div>
         </div>

@@ -1,0 +1,38 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.app-container {
+    border-radius: 4px;
+    width: 100%;
+    display: flex;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    max-width: 2000px;
+    margin: 0 auto;
+
+}
+
+.app-content {
+    padding: 16px;
+    margin-left: 200px;
+    background-color: var(--app-bg);
+    flex: 1;
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    position: fixed;
+    width: 200px;
+    max-width: 200px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--sidebar);
+    display: flex;
+    flex-direction: column;
+}

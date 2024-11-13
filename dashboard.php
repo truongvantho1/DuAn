@@ -1,0 +1,1 @@
+<?php include('controllers/auth.controller.php');

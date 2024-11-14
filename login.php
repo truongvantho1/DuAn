@@ -76,10 +76,8 @@ if (isset($_POST['dangnhap'])) {
                                 <input type="password" name="pass" id="pass" placeholder="Mật khẩu" required />
                             </div>
                             <div class="form-group form-button">
-                                <<<<<<< Updated upstream <input type="submit" name="dangnhap" id="signin"
-                                    class="form-submit"=======<input type="submit" name="dangnhap" id="signin"
-                                    class="form-submit">>>>>>> Stashed changes
-                                    value="Đăng Nhập" />
+                                <input type="submit" name="dangnhap" id="signin" class="form-submit" input type="submit"
+                                    name="dangnhap" id="signin" class="form-submit" value="Đăng Nhập" />
                             </div>
                             <div class="error"><?php echo $error_message; ?></div>
                         </form>

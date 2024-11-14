@@ -1,5 +1,3 @@
-<?php include('controllers/auth.controller.php') ?>
-<?php include('controllers/auth.controller.php') ?>
 <?php include('components/header.php') ?>
 
 <div class="bg-light py-3">
@@ -150,5 +148,4 @@
         </div>
     </div>
 </div>
-<?php include('components/footer.php') ?>
 <?php include('components/footer.php') ?>

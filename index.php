@@ -1,6 +1,6 @@
-
 <?php include('components/header.php'); ?>
 </body>
+
 </html>
 <div class="site-blocks-cover" style="background-image: url(images/hero_1.jpg);" data-aos="fade">
     <div class="container">
@@ -123,21 +123,18 @@
                 <img src="images/blog_1.png" alt="Image placeholder" class="img-fluid rounded">
             </div>
             <div class="col-md-12 col-lg-5 text-center pl-md-5">
-<<<<<<< Updated upstream
-                <h2>Chương trình giảm giá 15% có giới hạn từ ngày 1/10/2024 đến 31/10/2024</h2>
-=======
-                <h2>Chương trình giảm giá 15% có giới hạn từ ngày 1/11/2024 đến 31/11/2024</h2>
->>>>>>> Stashed changes
+                <<<<<<< Updated upstream <h2>Chương trình giảm giá 15% có giới hạn từ ngày 1/10/2024 đến 31/10/2024</h2>
+                    =======
+                    <h2>Chương trình giảm giá 15% có giới hạn từ ngày 1/11/2024 đến 31/11/2024</h2>
+                    >>>>>>> Stashed changes
 
-                <p class="post-meta mb-4">Nha Trang <span class="block-8-sep">&bullet;</span>
-                    3/11/2024</p>
-                <p>Event Có hạn nên bạn hãy nhanh tay thêm vào giỏ hàng nhé , biết đâu được sẽ trở thành VIP của
-                    shop
-                    thì sao</p>
-                <p><a href="shop.php" class="btn btn-primary btn-sm">Mua Ngay</a></p>
+                    <p class="post-meta mb-4">Nha Trang <span class="block-8-sep">&bullet;</span>
+                        3/11/2024</p>
+                    <p>Event Có hạn nên bạn hãy nhanh tay thêm vào giỏ hàng nhé , biết đâu được sẽ trở thành VIP của
+                        shop
+                        thì sao</p>
+                    <p><a href="shop.php" class="btn btn-primary btn-sm">Mua Ngay</a></p>
             </div>
         </div>
     </div>
-</div>
-
-<?php include('components/footer.php') ?>
+</div><?php include('components/footer.php') ?>

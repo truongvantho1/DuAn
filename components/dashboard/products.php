@@ -4,8 +4,10 @@ $response = "";
 $error = [];
 if (isset($_POST['add-product'])) {
     $name = trim($_POST['name']);
+    $type = $_POST['type'];
     $price = $_POST['price'];
     $desc = trim($_POST['desc']);
+    $quantity = $_POST['quantity'];
     $image = $_FILES['image'];
     // Upload file
     $image_name = $image['name'];
@@ -18,7 +20,7 @@ if (isset($_POST['add-product'])) {
     if ($image_error === 0) {
         if (move_uploaded_file($image_tmp, $upload_file)) {
             // Insert into database
-            $query = "INSERT INTO products(name, description, price, quantity, image_url) VALUES('$name', '$desc', $price, 10, '$upload_file')";
+            $query = "INSERT INTO products (name,description,price,quantity,category_id,image_url) VALUES ('$name','$desc','$price','$quantity','$type','$upload_file')";
             $add = mysqli_query($conn, $query);
             if ($add) {
                 $response = "Thêm sản phẩm thành công.";
@@ -42,56 +44,56 @@ if (isset($_GET['action']) && $_GET['action'] === 'delete' && isset($_GET['id'])
         $response = "Xóa sản phẩm thất bại.";
     }
 }
+
 if (isset($_POST['update-product'])) {
-    // Lấy thông tin từ form
     $product_id = $_POST['product_id'];
     $name = trim($_POST['name']);
-    $desc = trim($_POST['desc']);
     $price = $_POST['price'];
+    $desc = trim($_POST['desc']);
     $quantity = $_POST['quantity'];
     $image = $_FILES['image'];
-
-    // Xử lý upload hình ảnh
-    $image_name = $image['name'];
-    $image_tmp = $image['tmp_name'];
-    $image_error = $image['error'];
     $upload_dir = 'uploads/';
-    $upload_file = $upload_dir . $image_name;
+    $upload_file = $upload_dir . basename($image['name']);
 
-    if ($image_error === 0) {
-        // Nếu có hình ảnh mới, upload lại
-        if (move_uploaded_file($image_tmp, $upload_file)) {
-            // Cập nhật sản phẩm trong CSDL
-            $query = "UPDATE products SET name='$name', description='$desc', price=$price, quantity=$quantity, image_url='$upload_file' WHERE product_id=$product_id";
-            $update = mysqli_query($conn, $query);
-            if ($update) {
-                $response = "Cập nhật sản phẩm thành công.";
-            } else {
-                $response = "Cập nhật sản phẩm thất bại.";
-            }
+    if ($image['error'] === 0) {
+        if (move_uploaded_file($image['tmp_name'], $upload_file)) {
+            $sql = "UPDATE products SET name = '$name', description = '$desc', price = '$price', quantity = '$quantity', image_url = '$upload_file' WHERE product_id = $product_id";
         } else {
-            $response = "Cập nhật hình ảnh thất bại.";
+            $sql = "UPDATE products SET name = '$name', description = '$desc', price = '$price', quantity = '$quantity' WHERE product_id = $product_id";
         }
     } else {
-        // Nếu không có hình ảnh mới, chỉ cập nhật các trường khác
-        $query = "UPDATE products SET name='$name', description='$desc', price=$price, quantity=$quantity WHERE product_id=$product_id";
-        $update = mysqli_query($conn, $query);
-        if ($update) {
-            $response = "Cập nhật sản phẩm thành công.";
-        } else {
-            $response = "Cập nhật sản phẩm thất bại.";
-        }
+        $sql = "UPDATE products SET name = '$name', description = '$desc', price = '$price', quantity = '$quantity' WHERE product_id = $product_id";
+    }
+
+    // Execute the update query
+    $update = mysqli_query($conn, $sql);
+    if ($update) {
+        $response = "Sửa sản phẩm thành công.";
+    } else {
+        $response = "Sửa sản phẩm thất bại.";
     }
 }
-$query = "SELECT product_id,name,description,price,quantity,image_url FROM products";
+
+//code tim kiem san pham
+
+$search_term = "";
+if (isset($_GET['search'])) {
+    $search_term = trim($_GET['search']);
+}
+
+// Cập nhật truy vấn SQL để tìm kiếm theo từ khóa
+$query = "SELECT *
+FROM products
+JOIN categories ON products.category_id = categories.category_id
+WHERE products.name LIKE '%$search_term%'
+ORDER BY product_id";
 $result = mysqli_query($conn, $query);
 ?>
 
 
 <div class="app-content">
     <?php require_once('components/dashboard/modal.php'); ?>
-    <?php require_once('components/dashboard/edit_modal.php'); ?>
-    <?php require_once('components/dashboard/confirm.php'); ?>
+
     <div class="app-content-header">
         <h1 class="app-content-headerText">Sản phẩm</h1>
         <small style="color: green; font-size: 16px; margin-left: 20px;"><?= $response ?></small>
@@ -107,7 +109,11 @@ $result = mysqli_query($conn, $query);
             phẩm</button>
     </div>
     <div class="app-content-actions">
-        <input class="search-bar" placeholder="Search..." type="text">
+        <form style="display:flex;gap:16px;align-items:center" method="GET" action="">
+            <input name="search" value="<?= htmlspecialchars($search_term) ?>" class="search-bar"
+                placeholder="Search..." type="text">
+            <button class="btn btn-dark pl-3" type="submit">Search</button>
+        </form>
         <div class="app-content-actions-wrapper">
             <div class="filter-button-wrapper">
                 <button class="action-button filter jsFilter"><span>Filter</span><svg xmlns="http://www.w3.org/2000/svg"
@@ -168,10 +174,11 @@ $result = mysqli_query($conn, $query);
         <thead class="thead-light">
             <tr>
 
-                <th style="width:200px">Tên sản phẩm</th>
-                <th style="width:350px">Mô tả</th>
-                <th style="width:150px">Giá</th>
-                <th style="width:100px">Số lượng</th>
+                <th style="width:15%">Tên sản phẩm</th>
+                <th style="width:10%">Loại sản phẩm</th>
+                <th style="width:30%">Mô tả</th>
+                <th style="width:10%">Giá</th>
+                <th style="width:10%">Số lượng</th>
                 <th>Ảnh</th>
                 <th>Thao tác</th>
             </tr>
@@ -181,9 +188,10 @@ $result = mysqli_query($conn, $query);
             // Kiểm tra nếu có dữ liệu trả về
             if (mysqli_num_rows($result) > 0) {
                 // Duyệt qua từng dòng dữ liệu
-                while ($row = mysqli_fetch_array($result)) { ?>
+                while ($row = mysqli_fetch_assoc($result)) { ?>
                     <tr>
                         <td><?= $row['name'] ?></td>
+                        <td><?= $row['category_name'] ?></td>
                         <td><?= $row['description'] ?></td>
                         <td><?= $row['price'] ?></td>
                         <td><?= $row['quantity'] ?></td>
@@ -208,9 +216,10 @@ $result = mysqli_query($conn, $query);
     </table>
 </div>
 <script>
+    // Thay đổi URL
     function openEditModal(productId) {
-        // Thay đổi URL
-        window.history.pushState(null, "", "?action=edit&id=" + productId);
-        $("#edit-product").modal("show");
+        window.location.href = "edit_modal.php?action=edit&id=" + productId;
+        const form_edit = document.getElementById('form-edit');
+        form_edit.style.display = 'block';
     }
 </script>

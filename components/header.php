@@ -1,9 +1,8 @@
 <?php
 session_start();
-<<<<<<< Updated upstream
-=======
+
 include "database/connect.php";
->>>>>>> Stashed changes
+
 // Kiểm tra nếu có yêu cầu đăng xuất
 if (isset($_GET['logout'])) {
     session_destroy(); // Hủy session
@@ -32,7 +31,6 @@ if (isset($_GET['logout'])) {
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=logout" />
     <style>
-<<<<<<< Updated upstream
         .material-symbols-outlined.logout-icon {
             color: red !important;
             font-size: 24px;
@@ -61,36 +59,35 @@ if (isset($_GET['logout'])) {
             font-size: 24px;
             color: #333;
         }
-=======
-    .material-symbols-outlined.logout-icon {
-        color: red !important;
-        font-size: 24px;
-        width: 24px;
-        height: 24px;
-        margin-top: 18px;
-        position: relative;
-        top: 3px;
-    }
 
-    .person {
-        display: flex;
-        align-items: center;
+        .material-symbols-outlined.logout-icon {
+            color: red !important;
+            font-size: 24px;
+            width: 24px;
+            height: 24px;
+            margin-top: 18px;
+            position: relative;
+            top: 3px;
+        }
 
-    }
+        .person {
+            display: flex;
+            align-items: center;
 
-    .person p {
-        margin-right: 8px;
+        }
 
-        font-size: 14px;
-        color: #555;
-        font-weight: 600;
-    }
+        .person p {
+            margin-right: 8px;
 
-    .person .icon-person {
-        font-size: 24px;
-        color: #333;
-    }
->>>>>>> Stashed changes
+            font-size: 14px;
+            color: #555;
+            font-weight: 600;
+        }
+
+        .person .icon-person {
+            font-size: 24px;
+            color: #333;
+        }
     </style>
 </head>
 
@@ -117,7 +114,7 @@ if (isset($_GET['logout'])) {
                                     <!-- Hiển thị tên người dùng nếu đã đăng nhập -->
                                     <li class="">
                                         <?php if (isset($_SESSION['user'])): ?>
-<<<<<<< Updated upstream
+
                                             <div class="person">
                                                 <p>Chào, <?php echo $_SESSION['user']; ?></p>
                                                 <a href="ttkhachhang.php">
@@ -138,28 +135,28 @@ if (isset($_GET['logout'])) {
                                                 </span>
                                             </a>
                                         </li>
-=======
+
                                         <div class="person">
                                             <p>Chào, <?php echo $_SESSION['user']; ?></p>
                                             <a href="ttkhachhang.php">
                                                 <span class="icon icon-person icon-person"></span>
                                             </a>
                                         </div>
-                                        <?php else: ?>
+                                    <?php else: ?>
                                         <a href="login.php"><span class="icon icon-person"></span></a>
-                                        <?php endif; ?>
+                                    <?php endif; ?>
                                     </li>
 
                                     <!-- Đăng xuất nếu đã đăng nhập -->
                                     <?php if (isset($_SESSION['user'])): ?>
-                                    <li>
-                                        <a href="?logout=true">
-                                            <span class="material-symbols-outlined logout-icon">
-                                                logout
-                                            </span>
-                                        </a>
-                                    </li>
->>>>>>> Stashed changes
+                                        <li>
+                                            <a href="?logout=true">
+                                                <span class="material-symbols-outlined logout-icon">
+                                                    logout
+                                                </span>
+                                            </a>
+                                        </li>
+
                                     <?php endif; ?>
 
                                     <li class="">

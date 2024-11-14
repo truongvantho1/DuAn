@@ -75,7 +75,11 @@ if (!isset($_SESSION['user'])) {
                     <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="icon mr-4 align-self-start">
                             <span class="icon-help"></span>
+<<<<<<< Updated upstream
                         </div>
+=======
+</div>
+>>>>>>> Stashed changes
                         <div class="text">
                             <h2 class="text-uppercase">Dịch Vụ Hỗ trợ</h2>
                             <p>Phục vụ tận tâm, khách hàng là thượng đế.</p>

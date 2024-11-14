@@ -1,3 +1,4 @@
+
 <nav class="site-navigation text-right text-md-center" role="navigation">
     <div class="container">
         <ul class="site-menu js-clone-nav d-none d-md-block">
@@ -5,6 +6,7 @@
                 <a href="index.php">Home</a>
             </li>
             <li class="<?php echo (basename($_SERVER['PHP_SELF']) == 'about.php') ? 'active' : ''; ?>">
+                
                 <a href="about.php">About</a>
             </li>
             <li class="<?php echo (basename($_SERVER['PHP_SELF']) == 'shop.php') ? 'active' : ''; ?>">
@@ -14,5 +16,6 @@
                 <a href="contact.php">Contact</a>
             </li>
         </ul>
+        
     </div>
 </nav>

@@ -1,6 +1,13 @@
+<<<<<<< Updated upstream
 <?php
 session_start();
 require_once 'model/conect.php'; // Kết nối cơ sở dữ liệu
+=======
+
+<?php
+session_start();
+require_once 'model/connectdb.php'; // Kết nối cơ sở dữ liệu
+>>>>>>> Stashed changes
 
 $error_message = '';
 
@@ -11,7 +18,11 @@ if (isset($_POST['dangnhap'])) {
 
     try {
         // Kết nối cơ sở dữ liệu
+<<<<<<< Updated upstream
         $conn = conect();
+=======
+        $conn = connectdb();
+>>>>>>> Stashed changes
 
         // Truy vấn để lấy thông tin người dùng từ cơ sở dữ liệu
         $stmt = $conn->prepare("SELECT * FROM login WHERE user = :user");
@@ -67,7 +78,11 @@ if (isset($_POST['dangnhap'])) {
                                 <input type="password" name="pass" id="pass" placeholder="Mật khẩu" required />
                             </div>
                             <div class="form-group form-button">
+<<<<<<< Updated upstream
                                 <input type="submit" name="dangnhap" id="signin" class="form-submit"
+=======
+<input type="submit" name="dangnhap" id="signin" class="form-submit"
+>>>>>>> Stashed changes
                                     value="Đăng Nhập" />
                             </div>
                             <div class="error"><?php echo $error_message; ?></div>

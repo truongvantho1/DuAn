@@ -1,50 +1,44 @@
+<?php
+include "database/connect.php";
+
+    if(isset($_GET['id'])) {
+        $id = $_GET['id'];
+        $sql3 = "SELECT * FROM products WHERE product_id = '$id'";
+        $get_product = mysqli_query($conn, $sql3);
+    }
+
+?>
 <?php include('components/header.php') ?>
 
 <div class="bg-light py-3">
     <div class="container">
         <div class="row">
             <div class="col-md-12 mb-0"><a href="index.php">Home</a> <span class="mx-2 mb-0">/</span> <strong
-                    class="text-black">Tank Top T-Shirt</strong></div>
+                    class="text-black"></strong></div>
         </div>
     </div>
 </div>
-
+<?php
+            // Kiểm tra nếu có dữ liệu trả về
+            if (mysqli_num_rows($get_product) > 0) {
+                // Duyệt qua từng dòng dữ liệu
+                while ($row = mysqli_fetch_assoc($get_product)) { ?>
 <div class="site-section">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <img src="images/cloth_1.jpg" alt="Image" class="img-fluid">
+                <img src="<?= $row['image_url'] ?>" alt="Image" class="img-fluid">
             </div>
             <div class="col-md-6">
-                <h2 class="text-black">Tank Top T-Shirt</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, vitae, explicabo? Incidunt
-                    facere, natus soluta dolores iusto! Molestiae expedita veritatis nesciunt doloremque sint asperiores
-                    fuga voluptas, distinctio, aperiam, ratione dolore.</p>
+
+                <h2 class="text-black"><?= $row['name'] ?></h2>
+                <p><?= $row['description'] ?></p>
                 <p class="mb-4">Ex numquam veritatis debitis minima quo error quam eos dolorum quidem perferendis. Quos
                     repellat dignissimos minus, eveniet nam voluptatibus molestias omnis reiciendis perspiciatis illum
                     hic magni iste, velit aperiam quis.</p>
-                <p><strong class="text-primary h4">$50.00</strong></p>
+                <p><strong class="text-primary h4"><?= $row['price'] ?></strong></p>
                 <div class="mb-1 d-flex">
-                    <label for="option-sm" class="d-flex mr-3 mb-3">
-                        <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio"
-                                id="option-sm" name="shop-sizes"></span> <span
-                            class="d-inline-block text-black">Small</span>
-                    </label>
-                    <label for="option-md" class="d-flex mr-3 mb-3">
-                        <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio"
-                                id="option-md" name="shop-sizes"></span> <span
-                            class="d-inline-block text-black">Medium</span>
-                    </label>
-                    <label for="option-lg" class="d-flex mr-3 mb-3">
-                        <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio"
-                                id="option-lg" name="shop-sizes"></span> <span
-                            class="d-inline-block text-black">Large</span>
-                    </label>
-                    <label for="option-xl" class="d-flex mr-3 mb-3">
-                        <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio"
-                                id="option-xl" name="shop-sizes"></span> <span class="d-inline-block text-black"> Extra
-                            Large</span>
-                    </label>
+
                 </div>
                 <div class="mb-5">
                     <div class="input-group mb-3" style="max-width: 120px;">
@@ -65,6 +59,16 @@
         </div>
     </div>
 </div>
+<?php }
+            } else {
+                // Nếu không có dữ liệu
+                echo "<tr>
+                <td colspan='7'>Không có sản phẩm nào</td>
+            </tr>";
+            }
+
+            ?>
+
 
 <div class="site-section block-3 site-blocks-2 bg-light">
     <div class="container">

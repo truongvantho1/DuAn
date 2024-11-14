@@ -1,7 +1,11 @@
 <?php
 
 session_start();
+<<<<<<< Updated upstream
 require_once 'model/conect.php';  // Kiểm tra đường dẫn và đảm bảo file conect.php tồn tại
+=======
+require_once 'model/connectdb.php';  // Kiểm tra đường dẫn và đảm bảo file conect.php tồn tại
+>>>>>>> Stashed changes
 
 $error_message = '';
 
@@ -18,7 +22,11 @@ if (isset($_POST['signup'])) {
     } else {
         try {
             // Kết nối cơ sở dữ liệu
+<<<<<<< Updated upstream
             $conn = conect();
+=======
+            $conn = connectdb();
+>>>>>>> Stashed changes
 
             // Kiểm tra xem email đã tồn tại trong cơ sở dữ liệu chưa
             $stmt = $conn->prepare("SELECT * FROM login WHERE gmail = :email");
@@ -72,7 +80,11 @@ if (isset($_POST['signup'])) {
                         <h2 class="form-title">ĐĂNG KÝ</h2>
                         <form method="POST" class="register-form" id="register-form">
                             <div class="form-group">
+<<<<<<< Updated upstream
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+=======
+<label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+>>>>>>> Stashed changes
                                 <input type="text" name="name" id="name" placeholder="Tên của bạn" required />
                             </div>
                             <div class="form-group">

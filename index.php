@@ -1,4 +1,7 @@
-<?php include('components/header.php') ?>
+
+<?php include('components/header.php'); ?>
+</body>
+</html>
 <div class="site-blocks-cover" style="background-image: url(images/hero_1.jpg);" data-aos="fade">
     <div class="container">
         <div class="row align-items-start align-items-md-center justify-content-end">
@@ -120,7 +123,11 @@
                 <img src="images/blog_1.png" alt="Image placeholder" class="img-fluid rounded">
             </div>
             <div class="col-md-12 col-lg-5 text-center pl-md-5">
+<<<<<<< Updated upstream
                 <h2>Chương trình giảm giá 15% có giới hạn từ ngày 1/10/2024 đến 31/10/2024</h2>
+=======
+                <h2>Chương trình giảm giá 15% có giới hạn từ ngày 1/11/2024 đến 31/11/2024</h2>
+>>>>>>> Stashed changes
 
                 <p class="post-meta mb-4">Nha Trang <span class="block-8-sep">&bullet;</span>
                     3/11/2024</p>

@@ -11,6 +11,10 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-md-9 order-2">
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
                 <div class="row">
                     <div class="col-md-12 mb-5">
                         <div class="float-md-left mb-4">
@@ -33,6 +37,10 @@
                     </div>
                 </div>
                 <div class="row mb-5">
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
                     <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                         <div class="block-4 text-center border">
                             <figure class="block-4-image">
@@ -101,11 +109,19 @@
                 <div class="border p-4 rounded mb-4">
                     <h3 class="mb-3 h6 text-uppercase text-black d-block">Categories</h3>
                     <ul class="list-unstyled mb-0">
+<<<<<<< Updated upstream
                         <li class="mb-1"><a href="shopg1.php" class="d-flex"><span>Giày</span> <span
                                     class="text-black ml-auto">(9)</span></a></li>
                         <li class="mb-1"><a href="shopd1.php" class="d-flex"><span>Dép</span> <span
                                     class="text-black ml-auto">(9)</span></a></li>
                         <li class="mb-1"><a href="shoppk1.php" class="d-flex"><span>Phụ kiện</span> <span
+=======
+                        <li class="mb-1"><a href="#" class="d-flex"><span>Giày</span> <span
+                                    class="text-black ml-auto">(9)</span></a></li>
+                        <li class="mb-1"><a href="#" class="d-flex"><span>Dép</span> <span
+                                    class="text-black ml-auto">(9)</span></a></li>
+                        <li class="mb-1"><a href="#" class="d-flex"><span>Phụ kiện</span> <span
+>>>>>>> Stashed changes
                                     class="text-black ml-auto">(8)</span></a></li>
                     </ul>
                 </div>

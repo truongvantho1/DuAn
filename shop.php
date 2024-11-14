@@ -1,4 +1,11 @@
 <?php include('components/header.php') ?>
+<?php
+    $sql = "Select * from categories";
+    $get_categories = mysqli_query($conn, $sql);
+    $sql2 = "Select * from products";
+    $get_products = mysqli_query($conn, $sql2);
+    
+?>
 <div class="bg-light py-3">
     <div class="container">
         <div class="row">
@@ -13,7 +20,7 @@
         <div class="row mb-5">
             <div class="col-md-9 order-2">
                 <div class="row">
-                    <div class="col-md-12 mb-5">
+                    <div class="col -md-12 mb-5">
                         <div class="float-md-left mb-4">
                             <h2 class="text-black h5">Shop All</h2>
                         </div>
@@ -33,6 +40,7 @@
                         </div>
                     </div>
                 </div>
+<<<<<<< Updated upstream
                 <div class="row mb-5">
                     <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                         <div class="block-4 text-center border">
@@ -132,6 +140,45 @@
                             </div>
                         </div>
                     </div>
+=======
+
+
+                <div class="">
+                    <div style="display: grid;grid-template-columns:1fr 1fr 1fr;grid-gap:16px" class="mb-4"
+                        data-aos="fade-up">
+                        <?php
+            // Kiểm tra nếu có dữ liệu trả về
+            if (mysqli_num_rows($get_products) > 0) {
+                // Duyệt qua từng dòng dữ liệu
+                while ($row = mysqli_fetch_assoc($get_products)) { ?>
+                        <div class="block-4 text-center border">
+                            <figure class="block-4-image">
+                                <a href="shop-single.php?id=<?=$row['product_id']?>"><img
+                                        style="height: 300px;width:100%;object-fit:cover" src="<?= $row['image_url'] ?>"
+                                        alt="Image placeholder" class="img-fluid"></a>
+                            </figure>
+                            <div class="block-4-text p-4">
+                                <h3><a href="shop-single.php"></a><?= $row['name'] ?></h3>
+
+                                <div>
+                                    <p class="mb-0">sale 0%</p>
+                                    <p style="text-decoration: line-through;"><?= $row['quantity'] ?>đ</p>
+                                    <p class="text-primary font-weight-bold"><?= $row['quantity'] ?>đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <?php }
+            } else {
+                // Nếu không có dữ liệu
+                echo "<tr>
+                <td colspan='7'>Không có sản phẩm nào</td>
+            </tr>";
+            }
+
+            ?>
+                    </div>
+
+>>>>>>> Stashed changes
                 </div>
                 <div class="row" data-aos="fade-up">
                     <div class="col-md-12 text-center">
@@ -154,12 +201,33 @@
                 <div class="border p-4 rounded mb-4">
                     <h3 class="mb-3 h6 text-uppercase text-black d-block">Categories</h3>
                     <ul class="list-unstyled mb-0">
+<<<<<<< Updated upstream
                         <li class="mb-1"><a href="shopg1.php" class="d-flex"><span>Giày</span> <span
                                     class="text-black ml-auto">(9)</span></a></li>
                         <li class="mb-1"><a href="shopd1.php" class="d-flex"><span>Dép</span> <span
                                     class="text-black ml-auto">(9)</span></a></li>
                         <li class="mb-1"><a href="shoppk1.php" class="d-flex"><span>Phụ kiện</span> <span
                                     class="text-black ml-auto">(8)</span></a></li>
+=======
+                        <?php
+            // Kiểm tra nếu có dữ liệu trả về
+            if (mysqli_num_rows($get_categories) > 0) {
+                // Duyệt qua từng dòng dữ liệu
+                while ($row = mysqli_fetch_assoc($get_categories)) { ?>
+                        <li class="mb-1"><a href="shopg1.php" class="d-flex"><span><?= $row['category_name'] ?></span>
+                                <span class="text-black ml-auto"></span></a></li>
+
+                        <?php }
+            } else {
+                // Nếu không có dữ liệu
+                echo "<tr>
+                <td colspan='7'>Không có sản phẩm nào</td>
+            </tr>";
+            }
+
+            ?>
+
+>>>>>>> Stashed changes
                     </ul>
                 </div>
             </div>

@@ -125,28 +125,6 @@ if (isset($_GET['logout'])) {
                                             <a href="login.php"><span class="icon icon-person"></span></a>
                                         <?php endif; ?>
                                     </li>
-
-                                    <!-- Đăng xuất nếu đã đăng nhập -->
-                                    <?php if (isset($_SESSION['user'])): ?>
-                                        <li>
-                                            <a href="?logout=true">
-                                                <span class="material-symbols-outlined logout-icon">
-                                                    logout
-                                                </span>
-                                            </a>
-                                        </li>
-
-                                        <div class="person">
-                                            <p>Chào, <?php echo $_SESSION['user']; ?></p>
-                                            <a href="ttkhachhang.php">
-                                                <span class="icon icon-person icon-person"></span>
-                                            </a>
-                                        </div>
-                                    <?php else: ?>
-                                        <a href="login.php"><span class="icon icon-person"></span></a>
-                                    <?php endif; ?>
-                                    </li>
-
                                     <!-- Đăng xuất nếu đã đăng nhập -->
                                     <?php if (isset($_SESSION['user'])): ?>
                                         <li>

@@ -1,11 +1,10 @@
 <?php
 session_start();
 require_once 'model/conect.php'; // Kết nối cơ sở dữ liệu
-
-
-
-session_start();
 require_once 'model/connectdb.php'; // Kết nối cơ sở dữ liệu
+
+
+
 
 
 $error_message = '';
